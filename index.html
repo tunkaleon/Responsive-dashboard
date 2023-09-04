@@ -1,0 +1,230 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font: poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My dashboard</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <h4>Dashboard</h4>
+        <div class="profile">
+            <span class="fas fas-search"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <img src="img/PHOT.jpg" alt="" class="profile-image">
+            <p class="profile-name">T.Leon</p>
+        </div>
+    </nav>  
+
+    <!-- sidebar -->
+
+    <input type="checkbox" id="togle">
+    <label for="togle" class="side-togle"><i class="fa-solid fa-bars"></i></label>
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <i class="fa-solid fa-list"></i><p>Overview</p>
+        </div>
+        <div class="sidebar-menu">
+            <i class="fa-solid fa-users"></i></i><p>Teams</p>
+        </div>
+        <div class="sidebar-menu">
+            <i class="fa-solid fa-credit-card"></i><p>Payments</p>
+        </div>
+        <div class="sidebar-menu">
+            <i class="fa-solid fa-chart-line"></i><p>Statistics</p>
+        </div>
+        <div class="sidebar-menu">
+            <i class="fa-solid fa-id-card"></i><p>Contacts</p>
+        </div>
+        <div class="sidebar-menu">
+            <i class="fa-solid fa-gear"></i><p>Settings</p>
+        </div>
+        <div class="sidebar-menu">
+            <i class="fa-solid fa-right-from-bracket"></i><p>Logout</p>
+        </div>
+    </div>
+
+    <!-- main dashboard -->
+
+    <main>
+        <div class="dashboard-container">
+
+            <!-- 4 cards top -->
+
+            <div class="card total1">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>Revenue</h3>
+                        <p>Taxes</p>
+                        <h2>20,000,000 <span>Frw</span></h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fa-solid fa-money-check"></i>
+                    </div>
+                </div>               
+            </div>
+            <div class="card total2">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>Total orders</h3>
+                        <p>Orders</p>
+                        <h2>20,000 <span>Orders</span></h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fa-solid fa-boxes"></i>
+                    </div>
+                </div>               
+            </div>
+            <div class="card total3">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>Toatal Customer</h3>
+                        <p>Costumer</p>
+                        <h2>20 <span>custmers</span></h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+                </div>               
+            </div>
+            <div class="card total4">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>daily Orders</h3>
+                        <p>Orders</p>
+                        <h2>20 <span>Orders</span></h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- 2 cards bottom -->
+
+            <div class="card detail"> 
+                <div class="detail-header">
+                    <h2>All Orders</h2>
+                    <button>See More</button>
+                </div>
+                <table>
+                    <tr>
+                        <th>Order #</th>
+                        <th>Company</th>
+                        <th>Stutus</th>
+                        <th>Total</th>
+                        <th>Created at</th>
+                        <th>Last Updated</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>VRT</td>
+                        <td><span class="stutus onpregress"><i class="fa-solid fa-circle"></i>Onprogress</span></td>
+                        <td>3,373,232 Frw</td>
+                        <td>03-09-2024</td>
+                        <td>03-09-2024</td>
+                        <td><i class="fa-solid fa-pen"></i></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>VRT</td>
+                        <td><span class="stutus confirm"><i class="fa-solid fa-circle"></i>Confirm</span></td>
+                        <td>3,373,232 Frw</td>
+                        <td>03-09-2024</td>
+                        <td>03-09-2024</td>
+                        <td><i class="fa-solid fa-pen"></i></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>VRT</td>
+                        <td><span class="stutus Fulfield"><i class="fa-solid fa-circle"></i>Fulfield</span> </td>
+                        <td>3,373,232 Frw</td>
+                        <td>03-09-2024</td>
+                        <td>03-09-2024</td>
+                        <td><i class="fa-solid fa-pen"></i></td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>VRT</td>
+                        <td><span class="stutus onpregress"><i class="fa-solid fa-circle"></i>Onprogress</span></td>
+                        <td>3,373,232 Frw</td>
+                        <td>03-09-2024</td>
+                        <td>03-09-2024</td>
+                        <td><i class="fa-solid fa-pen"></i></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>VRT</td>
+                        <td><span class="stutus confirm"><i class="fa-solid fa-circle"></i>Confirm</span></td>
+                        <td>3,373,232 Frw</td>
+                        <td>03-09-2024</td>
+                        <td>03-09-2024</td>
+                        <td><i class="fa-solid fa-pen"></i></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>VRT</td>
+                        <td><span class="stutus Fulfield"><i class="fa-solid fa-circle"></i>Fulfield</span> </td>
+                        <td>3,373,232 Frw</td>
+                        <td>03-09-2024</td>
+                        <td>03-09-2024</td>
+                        <td><i class="fa-solid fa-pen"></i></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card customer">
+             <h2>Sales Activities</h2>
+             <div class="customer-wrapper">
+                <img src="https://picsum.photos/536/354" alt="" class="customer-image">
+                <div class="customer-name">
+                    <h4>Kaka</h4>
+                    <p>I am from kigali</p>
+                </div>
+                <div class="customer-date">Today</div>
+             </div>
+             <div class="customer-wrapper">
+                <img src="https://picsum.photos/536/354" alt="" class="customer-image">
+                <div class="customer-name">
+                    <h4>Kaka</h4>
+                    <p>I am from kigali</p>
+                </div>
+                <div class="customer-date">Today</div>
+             </div>
+             <div class="customer-wrapper">
+                <img src="https://picsum.photos/536/354" alt="" class="customer-image">
+                <div class="customer-name">
+                    <h4>Kaka</h4>
+                    <p>I am from kigali</p>
+                </div>
+                <div class="customer-date">Today</div>
+             </div>
+             <div class="customer-wrapper">
+                <img src="https://picsum.photos/536/354" alt="" class="customer-image">
+                <div class="customer-name">
+                    <h4>Kaka</h4>
+                    <p>I am from kigali</p>
+                </div>
+                <div class="customer-date">Today</div>
+             </div>
+             <div class="customer-wrapper">
+                <img src="https://picsum.photos/536/354" alt="" class="customer-image">
+                <div class="customer-name">
+                    <h4>Kaka</h4>
+                    <p>I am from kigali</p>
+                </div>
+                <div class="customer-date">Today</div>
+             </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span class="footer-span"> Created by <a href="#">tunkaleon</a>| <span class="far fa-copyright"></span> 2023 Allright reserved.</span>
+    </footer>
+</body>
+</html>
