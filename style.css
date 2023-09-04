@@ -322,4 +322,14 @@ footer{
 
     margin-bottom: 30px;
 }
-
+.fa-trash , .fa-pen{
+    cursor: pointer;
+    font-size: 20px;
+}
+.fa-pen{
+    margin-right: 30px;
+    color: #0fc0ec;
+}
+.fa-trash{
+    color: red;
+}
