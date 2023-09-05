@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +6,112 @@
     outline: none;
     font-family: "poppins", sans-serif;
 }
+
+/* .............login.............. */
+
+.blogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ededf1;
+}
+.container{
+    position: relative;
+    max-width: 370px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.container header{
+    font-size: 22px;
+    font-weight: 600;
+    color: #333
+}
+.container form{
+    margin-top: 40px;
+}
+form .input-field{
+    position: relative;
+    height: 55px;
+    width: 100%;
+   
+}
+.input-field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    border: 1px solid #d1d1d1;
+}
+form .field{
+    margin-bottom: 30px;
+}
+.input-field input:valid ~ .fa-solid{
+    display: block;
+}
+.input-field .fa-solid{
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #919191;
+    cursor: pointer;
+    padding: 3px;
+    display: none;
+}
+.input-field .fa-solid.hide-btn:before{
+    content: "\f070";
+}
+.field .error{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+.invalid .error{
+    display: flex;
+}
+.invalid input{
+    border-color: #d93025;
+}
+.invalidpass .errror{
+    display: flex;
+}
+.invalidpass input{
+    border-color: #d93025;
+}
+.error .error-icon{
+    margin-right: 6px;
+    font-size: 15px;
+}
+.button{
+margin-top: 15px;
+margin-bottom: 15px;
+}
+.button input{
+    background-color: #4285f4;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+.button input:hover{
+    background-color: blue;
+}
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
 body{
     background-color: #f4f4fb;
 }
@@ -55,7 +162,6 @@ h2 span{
     display: flex;
     width: 32%;
     max-width: 200px;
-    justify-content: space-between;
     align-items: center;
 }
 .profile-image{
@@ -66,9 +172,9 @@ h2 span{
 }
 .profile-name{
     font-size: 0.9rem;
-    margin-left: -70px;
+    margin-left: 0px;
     margin-right: 30px;
-
+    font-weight: 600;
 }
 .side-togle{
     position: fixed;
@@ -99,6 +205,14 @@ h2 span{
     padding: 15px 25px;
     width: 100%;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.sidebar-menu a{
+    color: #fff;
+    text-decoration: none;
+}
+.sidebar-menu a:hover{
+    color: #050418;
 }
 .sidebar-menu .fa-solid{
     font-size: 25px;
@@ -281,6 +395,12 @@ font-size: 0.9rem;
         "customer customer"
         ;
     }
+    footer{
+        padding: 20px 0 20px 300px;
+    }
+    .search{
+        margin-right: 10px;
+    }
 }
 @media screen and (max-width: 480px) {
     .profile-name{
@@ -315,12 +435,23 @@ font-size: 0.9rem;
     .detail table{
         font-size: 0.9rem;
     }
+    .search input{
+        width: 150px;
+    }
+    .ss{
+        margin: 10px 0 0 120px;
+    
+    } 
+    .search{
+        margin-right: 20px;
+    }
 }
 footer{
     background-color: #fff;
-    padding: 20px 0 20px 700px;
-
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
+    padding: 15px;
 }
 .fa-trash , .fa-pen{
     cursor: pointer;
